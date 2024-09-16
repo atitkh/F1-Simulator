@@ -14,6 +14,8 @@ public class SimController : MonoBehaviour
     public GameObject carPrefab;
     public GameObject carParent;
     public OVRCameraRig CameraRig;
+    public Driver selectedDriver;
+    public TrackData selectedDriverTrackData;
 
     // Private Fields
     private List<Driver> drivers = new();
@@ -38,6 +40,7 @@ public class SimController : MonoBehaviour
     // Unity Events
     #region Unity Events 
     public UnityEvent OnLeaderboardUpdated = new UnityEvent();
+    public UnityEvent OnTelemetryUpdated = new UnityEvent();
     #endregion
 
     private void Start()
@@ -88,6 +91,12 @@ public class SimController : MonoBehaviour
         {
             Debug.Log($"Driver {entry.Key} is {entry.Value.gap_to_leader} seconds behind the leader.");
         }
+    }
+
+    public void selectDriver(int driver_number)
+    {
+        selectedDriver = F1Data.GetDriver(driver_number);
+        Debug.Log($"Selected driver: {selectedDriver.full_name}");
     }
 
     public void StartSimulation()
@@ -182,6 +191,7 @@ public class SimController : MonoBehaviour
         if (prevIndex >= 0 && nextIndex >= 0)
         {
             UpdateLeaderboard(driverNumber, trackData[prevIndex]);
+            UpdateTelemetryData(driverNumber, trackData[prevIndex]);
             InterpolatePosition(driverNumber, trackData[prevIndex], trackData[nextIndex]);
         }
     }
@@ -203,6 +213,15 @@ public class SimController : MonoBehaviour
         carModels[driverNumber].transform.localRotation = Quaternion.Slerp(carModels[driverNumber].transform.localRotation, Quaternion.Euler(0, angle, 0), t);
 
         // Debug.Log($"Updated position for Driver {driverNumber} to {interpolatedPosition}");
+    }
+
+    private void UpdateTelemetryData(int driverNumber, TrackData trackData)
+    {
+        if (selectedDriver != null && selectedDriver.driver_number == driverNumber)
+        {
+            selectedDriverTrackData = trackData;
+            OnTelemetryUpdated.Invoke();
+        }
     }
 
     private void UpdateLeaderboard(int driverNumber, TrackData trackData)
