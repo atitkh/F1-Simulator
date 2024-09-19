@@ -83,6 +83,9 @@ public class SimController : MonoBehaviour
         car.GetComponentInChildren<TMP_Text>().text = driver_acronym;
         // find lookat component and set target to the camera
         // car.transform.Find("NameTag")?.transform.LookAt(CameraRig.transform, Vector3.up);
+
+        // if a car is touched, select the driver
+        // car.GetComponent<Button>().onClick.AddListener(() => selectDriver(driver_number));
     }
 
     private void loadLeaderboard()

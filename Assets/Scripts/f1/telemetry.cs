@@ -15,15 +15,20 @@ public class TelemetryData : MonoBehaviour
 
     private void Update()
     {
-        // if (simController.isSimulating)
-        // {
-        //     simController.selectDriver(1);
-        // }
+        if (simController.isSimulating)
+        {
+            simController.selectDriver(1);
+        }
     }
 
     private void OnTelemetryUpdated()
     {
         //get the selected driver and track data
+        if (simController.selectedDriver == null || simController.selectedDriverTrackData == null)
+        {
+            return;
+        }
+
         Driver driver = simController.selectedDriver;
         TrackData trackData = simController.selectedDriverTrackData;
         Debug.Log("Telemetry updated for driver: " + driver.full_name);
