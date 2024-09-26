@@ -15,10 +15,10 @@ public class TelemetryData : MonoBehaviour
 
     private void Update()
     {
-        if (simController.isSimulating)
-        {
-            simController.selectDriver(1);
-        }
+        // if (simController.isSimulating)
+        // {
+        //     simController.selectDriver(1);
+        // }
     }
 
     private void OnTelemetryUpdated()

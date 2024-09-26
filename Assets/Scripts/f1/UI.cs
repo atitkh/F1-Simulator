@@ -7,9 +7,10 @@ public class UI : MonoBehaviour
 {
     public SimController simController;
     public TMP_Text timeText;
-
     public TMP_Text speedText;
-
+    public Dropdown driverDropdown;
+    public GameObject menuPanel;
+    [SerializeField] private OVRInput.Controller controller;
     private bool readyToStart = false;
 
     private void Start()
@@ -17,6 +18,8 @@ public class UI : MonoBehaviour
         simController.F1Data.OnDataFetched.AddListener(() =>
         {
             readyToStart = true;
+            populateDriverDropdown();
+
         });
     }
 
@@ -41,6 +44,29 @@ public class UI : MonoBehaviour
         {
             speedText.text = "Speed: Normal";
         }
+
+        if (OVRInput.GetDown(OVRInput.Button.One, controller))
+        {
+            Debug.Log("Button " + OVRInput.Button.One + " pressed");
+            ToggleMenu();
+        }
+    }
+
+    private void populateDriverDropdown()
+    {
+        driverDropdown.ClearOptions();
+        var driverOptions = simController.F1Data.AllDrivers().ConvertAll(d => new Dropdown.OptionData(d.full_name));
+        driverDropdown.AddOptions(driverOptions);
+        driverDropdown.onValueChanged.AddListener(delegate
+        {
+            var selectedDriver = simController.F1Data.AllDrivers()[driverDropdown.value];
+            simController.selectDriver(selectedDriver.driver_number);
+        });
+    }
+
+    public void ToggleMenu()
+    {
+        menuPanel.SetActive(!menuPanel.activeSelf);
     }
 
     public void StartSimulation()

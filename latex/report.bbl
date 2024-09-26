@@ -1,0 +1,85 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{godefroy_openf1}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=cc2d625a0b025e9ad0678909de53e42c}{%
+           family={Godefroy},
+           familyi={G\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {openf1.org}%
+      }
+      \strng{namehash}{cc2d625a0b025e9ad0678909de53e42c}
+      \strng{fullhash}{cc2d625a0b025e9ad0678909de53e42c}
+      \strng{fullhashraw}{cc2d625a0b025e9ad0678909de53e42c}
+      \strng{bibnamehash}{cc2d625a0b025e9ad0678909de53e42c}
+      \strng{authorbibnamehash}{cc2d625a0b025e9ad0678909de53e42c}
+      \strng{authornamehash}{cc2d625a0b025e9ad0678909de53e42c}
+      \strng{authorfullhash}{cc2d625a0b025e9ad0678909de53e42c}
+      \strng{authorfullhashraw}{cc2d625a0b025e9ad0678909de53e42c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{OpenF1 API | Real-time and historical Formula 1 data}
+      \verb{urlraw}
+      \verb https://openf1.org/
+      \endverb
+      \verb{url}
+      \verb https://openf1.org/
+      \endverb
+    \endentry
+    \entry{oculus_quest_3}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a8a06837aec81e16c9a07221848aef6f}{%
+           family={Oculus},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {oculus.com}%
+      }
+      \strng{namehash}{a8a06837aec81e16c9a07221848aef6f}
+      \strng{fullhash}{a8a06837aec81e16c9a07221848aef6f}
+      \strng{fullhashraw}{a8a06837aec81e16c9a07221848aef6f}
+      \strng{bibnamehash}{a8a06837aec81e16c9a07221848aef6f}
+      \strng{authorbibnamehash}{a8a06837aec81e16c9a07221848aef6f}
+      \strng{authornamehash}{a8a06837aec81e16c9a07221848aef6f}
+      \strng{authorfullhash}{a8a06837aec81e16c9a07221848aef6f}
+      \strng{authorfullhashraw}{a8a06837aec81e16c9a07221848aef6f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Oculus Quest 3}
+      \verb{urlraw}
+      \verb https://www.oculus.com/quest-3/
+      \endverb
+      \verb{url}
+      \verb https://www.oculus.com/quest-3/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
