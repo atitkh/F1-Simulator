@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  26 SEP 2024 13:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  30 SEP 2024 14:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -780,17 +780,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ]
-<Figures/main_ui.png, id=117, 962.09438pt x 448.67625pt>
+<Figures/main_ui.png, id=121, 962.09438pt x 448.67625pt>
 File: Figures/main_ui.png Graphic file (type png)
 <use Figures/main_ui.png>
-Package pdftex.def Info: Figures/main_ui.png  used on input line 108.
+Package pdftex.def Info: Figures/main_ui.png  used on input line 116.
 (pdftex.def)             Requested size: 231.84843pt x 108.12265pt.
-<Figures/sim_controller_ui.png, id=120, 524.71031pt x 405.76593pt>
+<Figures/sim_controller_ui.png, id=124, 524.71031pt x 405.76593pt>
 File: Figures/sim_controller_ui.png Graphic file (type png)
 <use Figures/sim_controller_ui.png>
-Package pdftex.def Info: Figures/sim_controller_ui.png  used on input line 117.
+Package pdftex.def Info: Figures/sim_controller_ui.png  used on input line 125.
 (pdftex.def)             Requested size: 231.84843pt x 179.29292pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 125.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 133.
  (c:/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -801,14 +801,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 
-Overfull \hbox (14.22322pt too wide) detected at line 147
+Overfull \hbox (14.22322pt too wide) detected at line 156
 \OML/zplm/m/it/10 x\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 t\OT1/zplm/m/n/10 ) = (\OT1/pplx/m/n/10 1 \OMS/zplm/m/n/10 ^^@ \OML/zplm/m/it/10 t\OT1/zplm/m/n/10 )\OML/zplm/m/it/10 x[] \OT1/zplm/m/n/10 + \OML/zplm/m/it/10 tx[]\OT1/pplx/m/n/10 ,  \OML/zplm/m/it/10 y\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 t\OT1/zplm/m/n/10 ) = (\OT1/pplx/m/n/10 1 \OMS/zplm/m/n/10 ^^@ \OML/zplm/m/it/10 t\OT1/zplm/m/n/10 )\OML/zplm/m/it/10 y[] \OT1/zplm/m/n/10 + \OML/zplm/m/it/10 ty[]
  []
 
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 162.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 172.
 
 
 [2{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./figures/main_ui.png> <./figures/sim_controller_ui.png>]
+
+
+
+[3]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -816,7 +820,7 @@ Package microtype Info: Character `029' is missing
 
 
 
-[3
+[4
 
 ] (./report.aux)
  ***********
@@ -824,24 +828,24 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 78A8A5741B9F6FFBB9C267961B1A4EC5;3853.
+(rerunfilecheck)             Checksum: A69384D4C11A10A91FD74911BFE80B91;4002.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23990 strings out of 473579
- 407693 string characters out of 5732263
- 1355795 words of memory out of 5000000
- 46218 multiletter control sequences out of 15000+600000
- 628537 words of font info for 329 fonts, out of 8000000 for 9000
+ 24039 strings out of 473579
+ 408108 string characters out of 5732263
+ 1361862 words of memory out of 5000000
+ 46219 multiletter control sequences out of 15000+600000
+ 631155 words of font info for 363 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,13n,95p,1036b,2088s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 81i,12n,95p,1036b,2088s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (3 pages, 386257 bytes).
+Output written on report.pdf (4 pages, 390877 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 104147 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 104155 words of extra memory for PDF output out of 106986 (max. 10000000)
 
