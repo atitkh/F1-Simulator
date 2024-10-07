@@ -4,6 +4,7 @@
 	unnumberedsections, % Comment to enable section numbering
 	twoside, % Two side traditional mode where headers and footers change between odd and even pages, comment this option to make them fixed
 ]{LTJournalArticle}
+
 \usepackage{graphicx} % Required to insert images
 \usepackage{listings} % Required for inserting code snippets
 \usepackage{biblatex}
@@ -196,8 +197,11 @@ For the sim control UI, the user needs controller input to toggle the UI and int
 
 \section{Critical Analysis}
 
+\subsection{Data Precision}
+The simulation currently uses only two coordinates for interpolation, which can lead to inaccuracies in the car's position and rotation. Additionally, the data from the API is already not precise enough and is scaled, further contributing to these inaccuracies. To improve precision, the simulation can be enhanced to include elevation data and use more advanced interpolation techniques like Catmull-Rom splines or Bezier curves to accurately represent movements like overtaking, cornering, and braking.
+
 \subsection{Interaction Enhancements}
-The simulation's current interaction model is confusing and lacks intuitiveness. It can be enhanced by adding more features like gesture recognition, voice commands, or gaze-based interactions. These features can provide a more intuitive and immersive experience for the user, allowing them to control the simulation more naturally.
+The simulation's current interaction model is confusing and lacks intuitiveness. It can be enhanced by adding more features like gesture recognition, voice commands, or gaze-based interactions. These features can provide a more intuitive and immersive experience for the user, allowing them to control the simulation more naturally \autocite{10.1145/3485279.3485288}
 
 \subsection{Environment Awareness}
 The simulation's environment awareness can be improved by integrating spatial mapping. This can help the simulation adapt to the user's physical environment, providing a more realistic and immersive experience. Spatial mapping can also be used to create more interactive elements in the simulation, such as placing the track in the user's physical space like a tabletop, floor or wall.
@@ -215,14 +219,33 @@ Adding multiplayer support to the simulation can enhance the user experience by 
 \subsection{Real-time Data Updates}
 The simulation can be enhanced to support real-time data updates, allowing users to view live Formula 1 races not limited to historical races.
 
-\subsection{Driver Performance Analysis}
-The simulation can be extended to include driver performance analysis, such as lap times, sector times, and even compare driver telemetry data to identify driving patterns and strategies. This can provide valuable insights for fans, teams, and analysts.
+\subsection{Data Visualization}
+The simulation can be enhanced to include advanced data visualization features, such as speed plots, lap time plots, and telemetry graphs. These visualizations can provide deeper insights for fans, teams, and analysts. FastF1 \autocite{fastF1} is a good example of a tool similar to OpenF1 that provides such visualizations. It offers data in the form of extended Pandas DataFrames and integrates with Matplotlib for easy data visualization. Figures [\ref{fig:speed_plot}, \ref{fig:lap_time_plot}, \ref{fig:gear_shifts_plot}] show examples of speed and lap time plots for a driver taken from FastF1.
+
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{plot_speed_on_track_001.png}
+	\caption{Speed Plot of a Driver on Track}
+    \label{fig:speed_plot}
+\end{figure}
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{plot_driver_lap_001.png}
+    \caption{Lap Time Plot of Four Drivers}
+    \label{fig:lap_time_plot}
+\end{figure}
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{plot_gear_shifts_on_track_001.png}
+    \caption{Gear Shift Visualization for the Fastest Lap of a Driver}
+    \label{fig:gear_shifts_plot}
+\end{figure}
 
 \subsection{Weather and Track Conditions}
 Taking weather data from the OpenF1 API, the simulation can be enhanced to include dynamic weather and track conditions, such as rain, fog, or changing track temperatures. This can add an extra layer of realism and challenge to the simulation.
 
 \section{Conclusion}
 The F1 Simulation project demonstrates the potential of integrating real-world data with mixed reality technology to create immersive and interactive experiences for users. By leveraging the OpenF1 API and Unity engine, the project simulates Formula 1 races introducing the concept of a digital twin, where the virtual simulation mirrors real-world race events and conditions. By utilizing this concept, the project not only provides an engaging user experience but also opens up possibilities for advanced data visualization and analysis, making it a potentially valuable tool for both entertainment and professional applications.
+
 \printbibliography
 
 \end{document}
