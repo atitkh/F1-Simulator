@@ -17,10 +17,10 @@ public class F1Data : MonoBehaviour
     private const string intervalUrl = "https://api.openf1.org/v1/intervals?session_key={0}&driver_number={1}";
     private const string driversUrl = "https://api.openf1.org/v1/drivers?session_key={0}";
     private int scaleFactor = 1;
-    private int maxDataPull = 20;
+    private int maxDataPull = 2;
     private bool invoked = false;
     public TMP_Text DebugText;
-    public bool APILocal = true; 
+    public bool APILocal = false; 
 
     private void Update()
     {
