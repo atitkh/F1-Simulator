@@ -20,7 +20,7 @@ public class F1Data : MonoBehaviour
     private int maxDataPull = 20;
     private bool invoked = false;
     public TMP_Text DebugText;
-    public bool APILocal = true;
+    public bool APILocal = true; 
 
     private void Update()
     {

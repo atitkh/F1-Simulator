@@ -24869,6 +24869,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   DebugText: {fileID: 1940939887}
+  APILocal: 1
 --- !u!4 &1397827655
 Transform:
   m_ObjectHideFlags: 0
